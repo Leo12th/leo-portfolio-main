@@ -1,6 +1,7 @@
 {
   "name": "portifolio-leonardo",
   "version": "0.1.0",
+  "homepage": "https://leo12th.github.io/leo-portfolio-main",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -16,6 +17,8 @@
     "use-local-storage": "^2.3.6"
   },
   "scripts": {
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -33,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^4.1.4"
   }
 }
